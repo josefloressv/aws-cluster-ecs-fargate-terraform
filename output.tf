@@ -1,3 +1,7 @@
+output "fargate-vpc-id" {
+    value = "${data.aws_vpc.fargate.id}"
+}
+
 output "fargate-cluster-name" {
     value = "${aws_ecs_cluster.fargate-cluster.id}"
 }
