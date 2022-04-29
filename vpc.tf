@@ -1,6 +1,6 @@
 module "vpc" {
   source         = "terraform-aws-modules/vpc/aws"
-  name           = "test_ecs_provisioning"
+  name           = var.vpc_name
   cidr           = var.vpc_cidr
   azs            = var.vpc_public_subnets_azs
   public_subnets = var.vpc_public_subnets
